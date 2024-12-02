@@ -1,0 +1,257 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #444;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px; /* Adjusted to avoid navbar overlap */
+}
+
+/* Box container (Navigation Boxes) */
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.box {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.box:hover {
+    background-color: #004d40;
+}
+
+/* Form styling for login and register */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Input fields styling */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Styling for Email and Years input fields */
+form input[type="email"],
+form input[type="number"] {
+    border: 1px solid #00796b; /* Border color for email and years */
+    background-color: #f1f1f1; /* Light grey background */
+}
+
+form input[type="email"]:focus,
+form input[type="number"]:focus {
+    border-color: #004d40;
+    background-color: #ffffff; /* White background on focus */
+    outline: none;
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #388e3c;
+}
+
+/* Login/Register page styling */
+.login-container, .register-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px; 
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Message feedback */
+h1[style] {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Link styling */
+a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #00796b;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    form.search-form input[type="text"] {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 12px;
+    }
+
+    .login-container, .register-container {
+        justify-content: center;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
